@@ -100,6 +100,7 @@ if [ -n "$lasttag" ]
 fi
 
 echo
+# formatting of changelog could be improved here.
 changes="$(git --no-pager log $range $commitsToShow --pretty=oneline )"
 
 # If there are no commits we have nothing to do.
@@ -172,10 +173,10 @@ npm install || exit 7
 npm test || exit 8
 
 # Update the Changelog
-echo '' >> 'CHANGELOG.md' # new line
-echo '# ' $newVersion >> 'CHANGELOG.md'
-echo '' >> 'CHANGELOG.md' # new lines
-echo "$changes" >> 'CHANGELOG.md'
+
+changeLog='\n'$newVersion'\n'$changes'\n\n'
+
+echo $changeLog$(cat changelog.md)  >  CHANGELOG.md
 
 # Add the files we just changed
 git add CHANGELOG.md
