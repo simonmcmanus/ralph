@@ -1,0 +1,25 @@
+
+{
+  "name": "ralph",
+  "version": "1.0.0",
+  "description": "Ralph the releaser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ralph": "./bin/cmd.sh",
+    "ralph-semver": "./node_modules/semver/bin/semver",
+    "ralph-bundled-dependencies": "./node_modules/bundled-dependencies/cmd.js"
+  },
+  "dependencies": {
+    "bundled-dependencies": "*",
+    "semver": "*",
+    "ralph": "./release.sh"
+  },
+  "dependencies": {
+    "bundled-dependencies": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
