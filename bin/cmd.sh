@@ -61,10 +61,10 @@ fi
 #TODO  - should probably warn about doing this or sit behind a flag
 # - its the easiest way to ensure the local tags are not different to the remotes.
 git tag -l | xargs git tag -d
-git fetch upstream --tags
+git fetch origin --tags
 
 #ensure we have the latest upstream changes.
-git pull --rebase upstream master --quiet
+git pull --rebase origin master --quiet
 
 # default this to no value.
 commitsToShow=''
