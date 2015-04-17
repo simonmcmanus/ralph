@@ -6,7 +6,6 @@
 
 # Prints the package name from the package.json.
 echo ------------------------------
-echo Ralph
 echo Last release:
 node -e 'console.log(require("./package.json").name)'
 echo ------------------------------
@@ -176,7 +175,14 @@ npm test || exit 8
 
 changeLog='\n'$newVersion'\n'$changes'\n\n'
 
-echo $changeLog$(cat changelog.md)  >  CHANGELOG.md
+echo '
+
+'$newVersion'
+
+'$changes'
+
+'$(cat CHANGELOG.md) > CHANGELOG.md
+
 
 # Add the files we just changed
 git add CHANGELOG.md
