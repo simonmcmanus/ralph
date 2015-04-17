@@ -22,3 +22,7 @@ e33375e499f096387774437757a4102b7b747c60 adding an empty readme file
 #  1.0.4
 
 168750012c268b5ab864903961e1799cb0e7e8f1 adding an exit for testing purposes - this is getting abit silly
+
+#  1.0.5
+
+caf04f0855bfa0ae717858d47aae59f09baa9277 removing exit - told u this was getting silly
