@@ -14,11 +14,7 @@
   },
   "dependencies": {
     "bundled-dependencies": "*",
-    "semver": "*",
-    "ralph": "./release.sh"
-  },
-  "dependencies": {
-    "bundled-dependencies": "*"
+    "semver": "*"
   },
   "author": "",
   "license": "ISC"
