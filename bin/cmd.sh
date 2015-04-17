@@ -225,12 +225,12 @@ cp package.json ./dist/package.json.backup
 # https://github.com/simonmcmanus/bundled-dependencies
 ralph-bundled-dependencies
 
-
 # Makes the .tgz package and sets the release varaible.
 
 # not entirely sure we need this variable as $newVersion is avaialble.
 release="$(npm pack)"
 
+cp ./$release ./dist/$release
 # We dont want to commit bundledDependencies to git so lets revert back to the backup package.json
 #mv ./dist/package.json.backup ./package.json
 
