@@ -18,3 +18,7 @@ b045aaf3eb330e31842e3fb008f5efbf76e7ea53 minor change - only keeping it to test 
 # 
 
 e33375e499f096387774437757a4102b7b747c60 adding an empty readme file
+
+#  1.0.4
+
+168750012c268b5ab864903961e1799cb0e7e8f1 adding an exit for testing purposes - this is getting abit silly
