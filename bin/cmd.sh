@@ -100,7 +100,7 @@ fi
 
 echo
 # formatting of changelog could be improved here.
-changes="$(git --no-pager log $range $commitsToShow --pretty=oneline )"
+changes="$(git --no-pager log $range $commitsToShow --pretty=format:%s' - '%h )"
 
 # If there are no commits we have nothing to do.
 if [ -z "$changes" ]
