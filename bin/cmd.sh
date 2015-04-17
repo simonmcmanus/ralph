@@ -100,7 +100,10 @@ fi
 
 echo
 # formatting of changelog could be improved here.
-changes="$(git --no-pager log $range $commitsToShow --pretty=format:%s' - '%h )"
+changes="$(git --no-pager log $range $commitsToShow --pretty=format:%h' - '%s )"
+
+# get changes as markdown.
+mdChanges="$(git --no-pager log $range $commitsToShow --pretty=format:%s [view commit](http://github.com/$3/$4/commit/%H)  )"
 
 # If there are no commits we have nothing to do.
 if [ -z "$changes" ]
@@ -179,7 +182,7 @@ echo '
 
 # '$newVersion'
 
-'$changes'
+'$mdChanges'
 
 '$(cat CHANGELOG.md) > CHANGELOG.md
 
