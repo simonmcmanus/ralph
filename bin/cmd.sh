@@ -4,7 +4,6 @@
 
 # Comments and feedback much welcomed via github issues.
 
-
 # Prints the package name from the package.json.
 echo ------------------------------
 echo Ralph

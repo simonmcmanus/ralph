@@ -1,7 +1,7 @@
 
 {
   "name": "ralph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ralph the releaser.",
   "main": "index.js",
   "scripts": {
