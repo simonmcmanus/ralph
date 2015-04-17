@@ -4,9 +4,7 @@
   "version": "1.0.1",
   "description": "Ralph the releaser.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "bin": {
     "ralph": "./bin/cmd.sh",
     "ralph-semver": "./node_modules/semver/bin/semver",
