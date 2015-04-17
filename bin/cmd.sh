@@ -241,8 +241,6 @@ git reset --soft head~$commitCount
 # Crazy indentation to keep release notes looking pretty.
 git commit -am "$commitMsg" || exit 13
 
-exit
-
 #Push the squashed commit.
 # do this first so if this fails we dont push the tag.
 git push origin master -f || exit 15
@@ -252,7 +250,7 @@ git push origin master -f || exit 15
 git push origin master --tags || exit 14
 
 # todo - This will probably be an scp? how will permissions work?
-mv $release ./dist/$release
+git push origin master --tags
 
 ## latest.tgz is the file that we point to in package.json file of our dependencies.
 cp ./dist/$release ./dist/latest.tgz
