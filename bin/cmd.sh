@@ -241,11 +241,14 @@ git reset --soft head~$commitCount
 # Crazy indentation to keep release notes looking pretty.
 git commit -am "$commitMsg" || exit 13
 
-# npm version command above created a tag, lets push that tag.
-git push origin master --tags || exit 14
 
 #Push the squashed commit.
+# do this first so if this fails we dont push the tag.
 git push origin master --force || exit 15
+
+
+# npm version command above created a tag, lets push that tag.
+git push origin master --tags || exit 14
 
 # todo - This will probably be an scp? how will permissions work?
 mv $release ./dist/$release
