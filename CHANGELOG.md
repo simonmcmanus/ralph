@@ -26,3 +26,7 @@ e33375e499f096387774437757a4102b7b747c60 adding an empty readme file
 #  1.0.5
 
 caf04f0855bfa0ae717858d47aae59f09baa9277 removing exit - told u this was getting silly
+
+#  1.0.6
+
+c4cddabd57d57763b2e1db93d45dedf66064b62b moving pack straight into the dist folder
