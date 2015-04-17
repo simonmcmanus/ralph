@@ -177,7 +177,7 @@ changeLog='\n'$newVersion'\n'$changes'\n\n'
 
 echo '
 
-'$newVersion'
+# '$newVersion'
 
 '$changes'
 
