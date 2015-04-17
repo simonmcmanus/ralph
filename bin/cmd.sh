@@ -241,6 +241,7 @@ git reset --soft head~$commitCount
 # Crazy indentation to keep release notes looking pretty.
 git commit -am "$commitMsg" || exit 13
 
+exit
 
 #Push the squashed commit.
 # do this first so if this fails we dont push the tag.
