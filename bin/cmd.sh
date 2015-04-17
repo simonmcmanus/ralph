@@ -244,7 +244,7 @@ git commit -am "$commitMsg" || exit 13
 
 #Push the squashed commit.
 # do this first so if this fails we dont push the tag.
-git push origin master --force || exit 15
+git push origin master -f || exit 15
 
 
 # npm version command above created a tag, lets push that tag.
