@@ -30,3 +30,7 @@ caf04f0855bfa0ae717858d47aae59f09baa9277 removing exit - told u this was getting
 #  1.0.6
 
 c4cddabd57d57763b2e1db93d45dedf66064b62b moving pack straight into the dist folder
+
+#  1.0.7
+
+ac0a09196456d583e447e03b768eb82788133681 The package is now moved instead of copied meaning its not left in the project root
