@@ -230,7 +230,7 @@ ralph-bundled-dependencies
 # not entirely sure we need this variable as $newVersion is avaialble.
 release="$(npm pack)"
 
-cp ./$release ./dist/$release
+mv ./$release ./dist/$release
 # We dont want to commit bundledDependencies to git so lets revert back to the backup package.json
 #mv ./dist/package.json.backup ./package.json
 
