@@ -210,8 +210,7 @@ cp package.json ./dist/package.json.backup
 npm shrinkwrap || exit 10
 
 git add npm-shrinkwrap.json
-git add package.json
-git commit -m $newVersion' - adding npm-shrinkwrap.json  and package file - this commit should be reset.'
+git commit -m $newVersion' - adding npm-shrinkwrap.json for tagged release.'
 
 commitMsg='Release '$newVersion':
 '"$changes"
