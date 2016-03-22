@@ -4,15 +4,18 @@
 
 # Comments and feedback much welcomed via github issues.
 
-# Prints the package name from the package.json.
-echo ------------------------------
-echo Last release:
-node -e 'console.log(require("./package.json").name)'
-echo ------------------------------
-echo
-echo
 # Checks the package.json (in the folder from which this script is run) and get the last version number.
 packageVersion="$(node -e 'console.log(require("./package.json").version)')"
+packageName="$(node -e 'console.log(require("./package.json").name)')"
+
+
+# Prints the package name from the package.json.
+echo ------------------------------
+echo  Release:
+echo "$packageName"
+echo ------------------------------
+echo
+echo
 
 if [ -z "$packageVersion" ];
     then
@@ -193,7 +196,7 @@ git commit -m '$newVersion - adding CHANGELOG.md file - (this commit message sho
 # we need to bump the version number in package.json.
 if [ "$newVersion" != "$packageVersion" ]
 then
-    npm version $type -m 'foobar - not the real commit - this commit will be reset' || exit 9
+    npm version $type -m 'foobar - not the real commit - this commit will be reset ' || exit 9
     # delete the commit made above
     git push origin master -f
     # delete the tag made by the version (we run a git tag later.)
@@ -214,7 +217,7 @@ npm shrinkwrap || exit 10
 git add npm-shrinkwrap.json
 git commit -m $newVersion' - adding npm-shrinkwrap.json for tagged release.'
 
-commitMsg='Release '$newVersion':
+commitMsg='Release: '$packageName'  v'$newVersion':
 '"$changes"
 
 git tag -a v$newVersion -m  "$commitMsg" || exit 11
