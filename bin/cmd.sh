@@ -196,7 +196,7 @@ git commit -m '$newVersion - adding CHANGELOG.md file - (this commit message sho
 # we need to bump the version number in package.json.
 if [ "$newVersion" != "$packageVersion" ]
 then
-    npm version $type -m 'foobar - not the real commit - this commit will be reset ' || exit 9
+    npm version $type -m 'foobar - not the real commit - this commit will be reset [skip ci]' || exit 9
     # delete the commit made above
     git push origin master -f
     # delete the tag made by the version (we run a git tag later.)
@@ -217,14 +217,14 @@ npm shrinkwrap || exit 10
 git add npm-shrinkwrap.json
 git commit -m $newVersion' - adding npm-shrinkwrap.json for tagged release.'
 
-commitMsg='Release: '$packageName'  v'$newVersion':
+commitMsg='Release: '$packageName' v'$newVersion':
 '"$changes"
 
 git tag -a v$newVersion -m  "$commitMsg" || exit 11
 
 git rm npm-shrinkwrap.json
 
-git commit -m $newVersion' - removing npm-shrinkwrap.json - this commit should be reset'
+git commit -m $newVersion' - removing npm-shrinkwrap.json - this commit should be reset [skip ci]'
 
 git push origin master || exit 12
 
