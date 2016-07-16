@@ -1,5 +1,13 @@
 
 
+# 1.4.0
+
+keep formatting of changelog markdown between releases [view commit](http://github.com/$3/$4/commit/fa84cfb8456a01a7df2025b58b2a2a38deda20df) 
+
+using %n for line break [view commit](http://github.com/$3/$4/commit/18aa374961f0e9f784e1fda93ad91daf5a1e481f) 
+
+ 
+
 # 1.3.1
 
 forcing new line in html [view commit](http://github.com/$3/$4/commit/13ed4d68411c0a64bf42f2aef42bc572e2c6288e) <br />
