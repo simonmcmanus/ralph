@@ -179,14 +179,14 @@ npm test || exit 8
 
 # Update the Changelog
 
-
+existingMarkdown=$(cat CHANGELOG.md)
 echo '
 
 # '$newVersion'
 
 '"$mdChanges"'
 
-'$(cat CHANGELOG.md) > CHANGELOG.md
+' "$existingMarkdown" > CHANGELOG.md
 
 
 # Add the files we just changed
