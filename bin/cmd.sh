@@ -106,7 +106,7 @@ echo
 changes="$(git --no-pager log $range $commitsToShow --pretty=format:%h' - '%s )"
 
 # get changes as markdown.
-mdChanges="$(git --no-pager log $range $commitsToShow --pretty='format:%s [view commit](http://github.com/$3/$4/commit/%H) %n' )"
+mdChanges="$(git --no-pager log $range $commitsToShow --pretty='format:%s [view commit](http://github.com/$3/$packageName/commit/%H) %n' )"
 
 # If there are no commits we have nothing to do.
 if [ -z "$changes" ]
@@ -191,7 +191,7 @@ echo '
 
 # Add the files we just changed
 git add CHANGELOG.md
-git commit -m '$newVersion - adding CHANGELOG.md file - (this commit message should get squashed)'
+git commit -m '$newVersion - adding CHANGELOG.md file - (this commit message should get squashed) [skip ci]'
 
 # we need to bump the version number in package.json.
 if [ "$newVersion" != "$packageVersion" ]
