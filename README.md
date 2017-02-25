@@ -8,3 +8,6 @@ Handles the following for you:
 * Updates a CHANGELOG.md file.
 * Creates a package contianing all your npm dependancies so they can be installed offline.
 * Creates a git tag with an NPM shrinkwrap file so you can replicate from a git tag
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/simonmcmanus/ralph.svg)](https://greenkeeper.io/)
