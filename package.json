@@ -2,21 +2,8 @@
     "name": "ralph",
     "version": "1.4.0",
     "description": "Ralph the releaser.",
-    "main": "index.js",
     "scripts": {},
-    "bin": {
-        "ralph": "./bin/cmd.sh",
-        "ralph-semver": "./node_modules/semver/bin/semver",
-        "ralph-bundled-dependencies": "./node_modules/bundled-dependencies/cmd.js"
-    },
-    "dependencies": {
-        "bundled-dependencies": "*",
-        "semver": "*"
-    },
+    "dependencies": {},
     "author": "",
-    "license": "ISC",
-    "bundledDependencies": [
-        "bundled-dependencies",
-        "semver"
-    ]
+    "license": "ISC"
 }
