@@ -4,7 +4,7 @@
 
 The `ralph` **npm package** is being transferred to the ownership of **rauchg** (Guillermo Rauch), CEO of Vercel.
 
-This git repository will remain under its current ownership.
+This repository will remain under its current ownership.
 
 ## What’s Changing
 
@@ -17,18 +17,16 @@ This git repository will remain under its current ownership.
 
 From this point forward, this GitHub repository and the `ralph` npm package will represent **separate projects**.
 
-- This git repository will remain under the ownership of **simonmcmanus** and will not track or mirror the npm package going forward.
+- This repository will remain under the ownership of **simonmcmanus** and will not track or mirror the npm package going forward.
 - The npm package `ralph` will be developed and maintained independently by **rauchg** and the team at Vercel.
 
 Users should not assume alignment between this repository and future npm releases.
 
 ## Repository History
 
-The original implementation of `ralph` will continue to be available in this repository’s commit history.
+All historical versions of this project will remain permanently available via Git tags:
 
-The final pre-transfer source can be viewed here:
-
-👉 https://github.com/simonmcmanus/ralph/tree/4e9361d605ab4b24eebd7bb5f8214a4a843e08c8
+👉 https://github.com/simonmcmanus/ralph/tags
 
 ## Looking for the Active npm Project?
 
